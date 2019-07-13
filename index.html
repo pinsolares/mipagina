@@ -4,3 +4,65 @@
 <body>
 hola mundo
 </body>
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lista desplegable</title>
+<style type="text/css">
+html body {margin:15;}
+#navego h2 {display:none;}
+#navego ul {padding:1px; 0; margin-left:0; background-color: hsla(32,97%,48%,1.00); border:1px solid #0C02F7; font: bold 18px Verdana, Helvetica, Arial, sans-serif;  width:890px; letter-spacing:8px;}
+#navego ul li {list-style:none; margin:1; display:inline;}
+#navego ul li a {color: hsla(240,16%,15%,1.00);}
+</style>
+<style type="text/css">
+h5 {margin:0;}
+#navega {display: none;}
+#zla {display:none; color: hsla(63,90%,51%,1.00); font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif; font-size:24px; background-color:hsla(0,0%,0%,1.00); width:28%;}
+a:link {color: #669999; margin-top:0;}
+a:visited {color: #333;}
+a:link:hover, a:visited:hover {color:#777; background-color:#ccc;}
+</style>
+<script type="text/javascript">
+function kadabra (zap) {
+	if (document.getElementById) {
+		var abra = document.getElementById(zap).style;
+		if (abra.display == "block") {
+			abra.display = "none";
+		} else {
+			abra.display = "block"
+		}
+		return false
+	} else {return true
+	}
+}
+</script>
+</head>
+<body>
+<h5><a href="#" onClick="return kadabra('navega');">para navegar, pincha aquí</a></h5>
+<div id="navega">
+<ul>
+<li><a href="/">Inicio</a></li>
+<li><a href="about">Sobre</a></li>
+<li><a href="archives">Archivos</a></li>
+<li><a href="writing">Comentarios</a></li>
+<li><a href="speaking">Contactos</a></li>
+</ul>
+</div>
+<p>si quieres saber como se llama mi perro, pulsa<a href="#" onClick="return kadabra('zla'); "> aquí. </a></p>
+<p id="zla"> ¡Se&nbsp;llama&nbsp;Coti!</p>
+<div id="navego">
+<h2>lista horizontal</h2>
+<ul>
+<li><a href="/">Inicio</a></li>
+<li><a href="about">Sobre</a></li>
+<li><a href="archives">Archivos</a></li>
+<li><a href="writing">Comentarios</a></li>
+<li><a href="speaking">Contactos</a></li>
+</ul>
+</div>
+</body>
+</html>
